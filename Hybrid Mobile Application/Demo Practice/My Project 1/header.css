@@ -1,0 +1,116 @@
+body{
+    margin:0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header{
+    position: sticky;
+}
+
+header logo{
+    /* position: relative; */
+}
+nav{
+    /* position: relative; */
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    padding: 10px 100px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.3);
+
+}
+
+.sticky{
+    position: fixed;
+    width: 100%;   
+    background: rgba(0, 0, 0, 0.3);
+    transform-style: preserve-3d;
+    transition: linear .7s ease-in;
+    animation-name: slow;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes slow{
+    0%{
+        height: 0;
+        background-color: none;
+    }   
+    100%{
+        height: 100px;
+    }
+}
+.sticky nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: transparent;
+    position: relative;
+    animation-duration: 1.5s;
+    animation-name: slow;
+    animation-fill-mode: forwards;
+}
+nav .logo{
+    float: left;
+} 
+nav .logo img{
+    background-color: rgb(255, 99, 9);
+    width: 100px;
+    height: 90px;
+}
+
+nav ul{
+    float: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline;
+}
+
+nav ul li a{
+    text-decoration: none;
+    padding: 0 15px;
+    line-height: 80px;
+    text-transform: uppercase;
+    color: black;
+}
+nav ul li a.active,
+nav ul li a:hover{
+    font-weight: 700;
+    background-color: rgb(255, 99, 9);
+    color: whitesmoke;
+    transition: .5s;
+}
+section.sec1{
+    width: 100%;
+    height: 100vh;
+    background: url('train.jpg');
+    background-size: cover;
+} 
+section.sec2{
+    width: 100%;
+    height: 100vh;
+    background: url('train.jpg');
+    background-size: cover;
+}
+section.sec3{
+    width: 100%;
+    height: 100vh;
+    background: url('train.jpg');
+    background-size: cover;
+}
+
+.detail{
+    display: block;
+    transition: all .8s ease-in;
+    background-color: cadetblue;
+}
+
+
+
+
+
+
+
+

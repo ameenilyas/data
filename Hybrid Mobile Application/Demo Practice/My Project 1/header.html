@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="stylesheet" href="header.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="web.png" alt="">
+            </div>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="sec1">
+    </section>
+        <section class="content">
+            <h1>Lorem Ispum Text</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, ipsum autem. Neque nostrum accusamus repudiandae odit omnis iure excepturi, in quisquam quos consequatur nihil exercitationem atque explicabo voluptate et veniam perferendis obcaecati corrupti libero optio aspernatur dolor quis porro! Cumque inventore molestias quaerat, soluta et, perspiciatis maxime mollitia animi quis quod enim voluptatem esse sequi facere quasi praesentium suscipit eos, doloremque illum optio reiciendis? Ullam odit facere autem tempora nisi laboriosam rerum ratione similique? Ipsum accusantium ratione incidunt ipsam pariatur architecto nemo sequi ipsa ad, consectetur, id minima quod similique doloremque, ullam et voluptatem repellat eum possimus nisi molestiae cumque?</p>
+    </section>
+    <section class="sec2">
+    </section>
+        <section class="content">
+            <h1>Lorem Ispum Text</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, ipsum autem. Neque nostrum accusamus repudiandae odit omnis iure excepturi, in quisquam quos consequatur nihil exercitationem atque explicabo voluptate et veniam perferendis obcaecati corrupti libero optio aspernatur dolor quis porro! Cumque inventore molestias quaerat, soluta et, perspiciatis maxime mollitia animi quis quod enim voluptatem esse sequi facere quasi praesentium suscipit eos, doloremque illum optio reiciendis? Ullam odit facere autem tempora nisi laboriosam rerum ratione similique? Ipsum accusantium ratione incidunt ipsam pariatur architecto nemo sequi ipsa ad, consectetur, id minima quod similique doloremque, ullam et voluptatem repellat eum possimus nisi molestiae cumque?</p>
+    </section>
+    <section class="sec3">
+    </section>
+        <section class="content">
+            <h1>Lorem Ispum Text</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, ipsum autem. Neque nostrum accusamus repudiandae odit omnis iure excepturi, in quisquam quos consequatur nihil exercitationem atque explicabo voluptate et veniam perferendis obcaecati corrupti libero optio aspernatur dolor quis porro! Cumque inventore molestias quaerat, soluta et, perspiciatis maxime mollitia animi quis quod enim voluptatem esse sequi facere quasi praesentium suscipit eos, doloremque illum optio reiciendis? Ullam odit facere autem tempora nisi laboriosam rerum ratione similique? Ipsum accusantium ratione incidunt ipsam pariatur architecto nemo sequi ipsa ad, consectetur, id minima quod similique doloremque, ullam et voluptatem repellat eum possimus nisi molestiae cumque?</p>
+    </section>
+
+    <script>
+        window.addEventListener("scroll",function() {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 350);
+        })
+
+        window.addEventListener("scroll",function() {
+            var about = document.querySelector(".content");
+            about.classList.toggle("detail", window.scrollY > 550);
+        })
+    </script>
+</body>
+</html>

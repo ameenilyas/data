@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #333333;
+}    
+
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+input{
+    position: relative;
+    width: 120px;
+    height: 40px;
+    -webkit-appearance: none;
+    background: linear-gradient(0deg,#333333,#000000);
+    outline: none;
+    box-shadow:0 0 0 4px #353535,
+    0 0 0 5px #3e3e3e,
+    inset 0 0  10px rgba(0,0,0, 1),
+    0 5px 20px rgba(0, 0, 0, .2),
+    inset 0 0 155px rgba(0, 0, 0, .2) ;
+    border-radius: 20px;
+}
+
+    input:checked {
+        background: linear-gradient(0deg, cyan, darkcyan);
+        box-shadow: 0 0 2px #6dd1ff, 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px rgba(0, 0, 0, 1), 0 5px 20px rgba(0, 0, 0, .5), inset 0 0 15px rgba(0, 0, 0, .2);
+    }
+    
+input::before{
+    content: "";
+    position: absolute;
+    background: linear-gradient(0deg, #000000, #6b6b6b);
+    width: 80px;
+    top:0;
+    left: 0;
+    height: 40px;
+    border-radius: 20px;
+    transform: scale(.98,.96);
+    /* box-shadow: 0 0 1px solid #232332; */
+    transition: .5s;
+}
+input:checked::before{
+    left: 41px;
+}
+input::after{
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: linear-gradient(0deg,#333333,#000000);
+    top: 17px;
+    left: 65px;
+    transition: .5s;
+
+}
+input:checked::after{
+    background: linear-gradient(0deg,cyan,darkcyan);
+    box-shadow: 0 0 10px cyan,0 0 40px darkcyan,0 0 80px cyan;
+    left: 106px;
+}
+
+
+
+    /* input::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80px;
+        height: 40px;
+        background: linear-gradient(0deg, #000000, #6b6b6b);
+        border-radius: 20px;
+        box-shadow: 0 0 1px solid #232323;
+        transform: scale(.98, .96);
+        transition: .5s;
+    } */
+    
+
+    /* input:checked::before {
+        left: 40px;
+    } */
+    
+
+    /* input::after {
+        content: "";
+        position: absolute;
+        top: calc(50% - 2px);
+        left: 65px;
+        width: 4px;
+        height: 4px;
+        background: linear-gradient(0deg, #6b6b6b, #000000);
+        border-radius: 50%;
+        transition: .5s;
+    } */
+    
+
+    /* input:checked::after {
+        left: 105px;
+        background: cyan;
+        box-shadow: 0 0 5px cyan, 0 0 15px darkcyan;
+    } */

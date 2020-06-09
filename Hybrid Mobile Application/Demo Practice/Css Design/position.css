@@ -1,0 +1,33 @@
+.parent {
+    background-color: cornflowerblue;
+    font-size: 3rem;
+    padding: 10px;
+    height: 200vh;
+    position: relative;
+}
+
+.one {
+    margin-top:50px ;
+    padding: 5px;
+    background-color: cyan;
+    top: 30px;
+    cursor: pointer;
+    /* position: sticky; */
+    z-index: 1;
+}
+
+
+
+.two {
+    padding: 5px;
+    background-color: mediumslateblue;
+    /* position: sticky; */
+
+}
+
+.three {
+    padding: 5px;
+    background-color: greenyellow;
+    position: absolute;
+    top: 30px;
+}

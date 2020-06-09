@@ -1,0 +1,55 @@
+/* There are basically 5 properties of positons in CSS*/
+
+
+/*Static,relative,absolute,fixed,sticky*/
+
+
+/* Static is the default Css position */
+
+
+/* REaltive is just similar like the static but you can move side (top,bottom,left,right)*/
+
+
+/* absolute is just similar means you can also move all these given positions but the only diffrence is it is completely remove from the document flow..and for use this you have to set the position to its parent*/
+
+
+/* fixed is just similar like absolute but the difference is it will fixedd the element to that position */
+
+
+/* static ki video dekhni hai */
+
+body {
+    font-size: 50px;
+}
+
+.parent {
+    /* it removes it from the document flow and only allow the content to be appear */
+    background-color: blue;
+    padding: 25px;
+    position: absolute;
+    height: 200vh;
+}
+
+.child-1 {
+    /* It is the mixture of relative and fixed position which gives it the power of animation*/
+    top: 35px;
+    position: sticky;
+    /* position: fixed; */
+    /* position: absolute; */
+    background-color: cyan;
+    /* left: 20px; */
+}
+
+.child-2 {
+    /* it fixed the content and similar like absolute */
+    background-color: greenyellow;
+    position: fixed;
+    /*left: -15px; */
+}
+
+.child-3 {
+    /* foe easy to understand it can move freely through inside or outside it's parent*/
+    background-color: pink;
+    position: relative;
+    left: 15px;
+}

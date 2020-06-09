@@ -1,0 +1,30 @@
+body {
+    height: 500vh;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 600px;
+}
+
+ul {
+    margin: 0;
+    /* position: relative; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    justify-content: center;
+    position: sticky;
+    top: 10px;
+}
+
+li {
+    font-size: 3em;
+    list-style: none;
+    background: lightblue;
+    text-align: center;
+}

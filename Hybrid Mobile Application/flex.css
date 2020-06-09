@@ -1,0 +1,93 @@
+/* there are two axis of flex
+(main axis) which is consider as horizontal(x-axis).. properties (justify-content).This property deals with aligment of main axis (horizontally x-axis) 
+(cross axis) which is consider as vertical(y-axis) .. properties (align-tems) This property deals with aligment of main axis (vertically y-axis)
+  */
+
+
+/* flex-direction: row; */
+
+
+/* flex-direction: column; // by default    */
+
+
+/* NOTE:- These all are the properties to be assign in parent, will effect on child*/
+
+
+/*
+    Properties for (main axis) 
+    justify-items: flex-end;    
+    justify-items: flex-end;   
+    justify-items: center;   
+    justify-content: space-around;
+    justify-content: space-evenly;
+    justify-content: space-between;
+    justify-items: stretch; // by default   
+    */
+
+
+/*
+    Properties for (cross axis) 
+    align-items: flex-end;    
+    align-items: flex-end;   
+    align-items: center;   
+    align-items: stretch; // by default   
+    */
+
+@media(min-width:768px) {
+    /* (Media query) is used for limitaion */
+    .container-1 {     /* parent */
+        display: flex;
+    }
+    .container-2 {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.container-1 div,
+.container-2 div {
+    border: 1px solid #777;
+    padding: 10px;
+}
+
+
+/* Step One */
+
+.box-1 {
+    flex: 2;
+    order: 3;
+}
+
+.box-2 {
+    flex: 1;
+    order: 2;
+}
+
+.box-3 {
+    flex: 1;
+    order: 3;
+}
+
+
+/* Step Two */
+
+.container-2-box {
+    flex-basis: 25%;
+}
+
+
+/* Step Three */
+
+.container-3 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-3 div {
+    border: 1px solid #777;
+    padding: 10px;
+}
+
+.container-3-box {
+    flex-basis: 18%;
+}
